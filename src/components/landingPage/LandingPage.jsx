@@ -144,7 +144,7 @@ export default function LandingPage() {
                   </svg>
                 </span>
               </button>
-            ) :  <h2>The Online Image Splitter for your Instagram Carousels</h2>}
+            ) :  <h2>The Online Image Splitter for your Instagram Carousals</h2>}
           </div>
 
 
