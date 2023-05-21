@@ -144,7 +144,10 @@ export default function LandingPage() {
                   </svg>
                 </span>
               </button>
-            ) :  <h2>The Online Image Splitter for your Instagram Carousals</h2>}
+            ) :  <div>
+              <h2>The Online Image Splitter for your Instagram Carousals</h2>
+              <p>Follow me on instagram @<a href="https://www.instagram.com/fawadhamidi_/" target="_blank">fawadhamidi_</a></p>
+              </div>}
           </div>
 
 
