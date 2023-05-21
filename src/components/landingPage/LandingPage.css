@@ -287,9 +287,14 @@
   }
 
   @media (max-width: 768px) {
+    h2{
+        font-size: 14px;
+    }
     .card {
-        width: 90%;
-        height: auto;
+        margin: 20px;
+        width: 80%;
+        height: 30rem;
+        
     }
   
     .circles-image{
@@ -297,47 +302,53 @@
     }
   
     .upload-button, .upload-button:hover {
-        width:170px;
+        width:200px;
         height: 45px;
     }
   
-    /* .loader {
-        width: 48px;
-        height: 48px;
-    } */
+    .loader {
+      top:-20%;
+    }
   
     .slice-images{
         width: 40px;
     }
   
-    .button, .download-all, .download-all:hover {
+    /* .button, .download-all, .download-all:hover {
         width: 120px;
         height:30px;
-    }
+    } */
   }
   
   @media (max-width: 480px) {
+
+    h2{
+        font-size: 14px;
+    }
     .card {
-        width: 85%;
+       
+        width: 80%;
         flex-direction: column;
     }
   
     .circles-image{
-        width:120px;
+        width:160px;
     }
   
     .upload-button, .upload-button:hover {
-        width:140px;
-        height: 40px;
+        width:200px;
+        height: 50px;
     }
   
     .loader {
-        width: 36px;
-        height: 36px;
+       top:-20%
     }
   
     .slice-images{
         width: 30px;
+    }
+    .uploadedImage-div{
+
     }
   
     /* .button, .download-all, .download-all:hover {
