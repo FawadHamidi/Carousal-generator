@@ -301,10 +301,10 @@
         height: 45px;
     }
   
-    .loader {
+    /* .loader {
         width: 48px;
         height: 48px;
-    }
+    } */
   
     .slice-images{
         width: 40px;
@@ -340,9 +340,9 @@
         width: 30px;
     }
   
-    .button, .download-all, .download-all:hover {
+    /* .button, .download-all, .download-all:hover {
         width: 100px;
         height:30px;
     }
-  }
+  } */
   
