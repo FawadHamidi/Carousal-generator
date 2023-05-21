@@ -1,0 +1,348 @@
+.main-div{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.card {
+    background-color: rgba(255, 203, 187, 0.3);
+  
+    height: 30rem;
+    width: 45rem;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; 
+    padding: 2rem;
+
+}
+
+
+/* IMAGE LOADER */
+.loader {
+  
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background: #FFF;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg) translate(30%, 40%);
+    background: #ff9371;
+    box-shadow: 32px -34px 0 5px #ff3d00;
+    animation: slide 2s infinite ease-in-out alternate;
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff3d00;
+    transform: rotate(0deg);
+    transform-origin: 35px 145px;
+    animation: rotate 2s infinite ease-in-out;
+  }
+  
+  @keyframes slide {
+    0% , 100% {
+      bottom: -35px
+    }
+  
+    25% , 75% {
+      bottom: -2px
+    }
+  
+    20% , 80% {
+      bottom: 2px
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(-15deg)
+    }
+  
+    25% , 75% {
+      transform: rotate(0deg)
+    }
+  
+    100% {
+      transform: rotate(25deg)
+    }
+  }
+  
+  /* IMAGE LOADER */
+
+
+.circles-image{
+    position: relative;
+    width:200px;
+    /* margin-top:20px; */
+}
+
+.upload-button{
+    cursor: pointer;
+    font-size:20px;
+  position: absolute;
+  /* margin-top:25px;  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(4px) saturate(100%);
+  -webkit-backdrop-filter: blur(11px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width:220px;
+  height: 55px;
+}
+
+.upload-button:hover{
+    font-size:20px;
+    position: absolute;
+    /* margin-top:25px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(11px) saturate(100%);
+    -webkit-backdrop-filter: blur(11px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width:220px;
+  height: 55px;
+}
+
+.uploadedImage-div {
+    margin-top:20px;
+    width:100%;
+    height: 100px;
+    /* position:relative;
+    top:-20%; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .uploadedImage {
+    max-height:80%;
+    max-width: 100%; 
+    /* height: auto; */
+  }
+
+.slice-images{
+    width: 50px;
+  height: auto;
+    
+}
+
+.slice-images-div{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom:20px;
+
+}
+
+.button-circles-div{
+    /* margin-top:45px;  */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.third-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    position: absolute;
+    /* margin-top:25px; */
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.download-all{
+    /* margin-top:10px; */
+    cursor:pointer;
+   color: rgba(0,0,0,1);
+    width: 150px;
+    height:40px;
+    backdrop-filter: blur(4px) saturate(100%);
+    -webkit-backdrop-filter: blur(11px) saturate(100%);
+    /* background-color: rgba(71,175,100,0.5); */
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,1);
+}
+
+
+.download-all:hover{
+    
+    cursor:pointer;
+    color:white;
+    background-color: rgba(0,0,0,1);
+     width: 150px;
+     height:40px;
+     backdrop-filter: blur(4px) saturate(100%);
+     -webkit-backdrop-filter: blur(11px) saturate(100%);
+     /* background-color: rgba(71,175,100,0.5); */
+     border-radius: 100px;
+     border: 1px solid rgba(0,0,0,1);
+ }
+
+
+
+.download-button-div{
+    display:flex;
+    justify-content:center;
+}
+
+ .button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+   
+    align-items: center;
+    border: 0px solid #17795E;
+    background-color: #209978;
+    overflow: hidden;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .button:hover {
+    background: #17795E;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #146c54;
+  }
+  
+  .button:active {
+    border: 1px solid #146c54;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+  
+    .circles-image{
+        width:150px;
+    }
+  
+    .upload-button, .upload-button:hover {
+        width:170px;
+        height: 45px;
+    }
+  
+    .loader {
+        width: 48px;
+        height: 48px;
+    }
+  
+    .slice-images{
+        width: 40px;
+    }
+  
+    .button, .download-all, .download-all:hover {
+        width: 120px;
+        height:30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+        width: 85%;
+        flex-direction: column;
+    }
+  
+    .circles-image{
+        width:120px;
+    }
+  
+    .upload-button, .upload-button:hover {
+        width:140px;
+        height: 40px;
+    }
+  
+    .loader {
+        width: 36px;
+        height: 36px;
+    }
+  
+    .slice-images{
+        width: 30px;
+    }
+  
+    .button, .download-all, .download-all:hover {
+        width: 100px;
+        height:30px;
+    }
+  }
+  
